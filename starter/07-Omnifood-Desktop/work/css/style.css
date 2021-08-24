@@ -9,8 +9,6 @@
   background-color: #fdf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
-
-  position: relative;
 }
 
 .logo {
@@ -25,7 +23,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 2.4rem;
 }
 
 .main-nav-link:link,
@@ -54,31 +52,6 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
-}
-
-/* MOBILE */
-
-.btn-mobile-nav {
-  border: none;
-  background: none;
-  cursor: pointer;
-
-  display: none;
-}
-
-.icon-mobile-nav {
-  height: 4.8rem;
-  width: 4.8rem;
-  color: #333;
-}
-
-/* 
-  <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-  <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-*/
-
-.icon-mobile-nav[name="close-outline"] {
-  display: none;
 }
 
 /*******************************/
@@ -175,7 +148,7 @@
 /* HOW IT WORKS SECTION */
 /*******************************/
 .section-how {
-  padding: 9.6rem 0;
+  padding: 9.6rem;
 
   display: grid;
 }
@@ -319,6 +292,26 @@
   color: #e67e22;
 }
 
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  height: 3rem;
+  width: 3rem;
+  color: #e67e22;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
@@ -331,7 +324,7 @@
 .section-testimonials {
   background-color: #fdf2e9;
   display: grid;
-  grid-template-columns: 55fr 45fr;
+  grid-template-columns: 3fr 2fr;
   align-items: center;
 }
 
