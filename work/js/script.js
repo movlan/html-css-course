@@ -50,12 +50,10 @@ const obs = new IntersectionObserver(
   (entries) => {
     const ent = entries[0];
     if (!ent.isIntersecting) {
-      console.log(ent);
       document.body.classList.add("sticky");
     }
 
     if (ent.isIntersecting) {
-      console.log(ent);
       document.body.classList.remove("sticky");
     }
   },
@@ -82,7 +80,6 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
